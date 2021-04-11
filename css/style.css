@@ -1,21 +1,140 @@
 *{margin:0; padding:0;}
 html{
 	height:100%;
-	background: linear-gradient(rgba(38, 128, 101, 0.9), rgba(52, 117, 140, 0.9));
+	background: #8cb3d9;
 }
-body{
-	font-family: 'Arimo' sans-serif;
+main{
+	width: 70%;
+ margin: auto;
+ background-color: #ebf0fa;
+
+ top: 30px;
+ border-style: groove;
+ border-width: 1px
+ border-color:#adad85;
+ text-align: center;
+   font-family: serif; 
+     font-size: 2em;
+}
+
+#menu ul li a:hover {
+    background-color:#D6D6D6;
+    color: #6D6D6D;
+    border-bottom:3px solid #EA0000;
+}
+#menu ul {
+    padding:0px;
+    margin:0px;
+    background-color:#EDEDED;////////////////////////////////////////////////////////////
+    list-style:none;
+}
+
+#menu ul li { display: inline; }
+
+#menu ul li a {
+    padding: 2px 10px;
+    display: inline-block;
+
+    /* visual do link */
+    background-color:#EDEDED;//////////////////////////////////////////
+    color: #333;
+    text-decoration: none;
+    border-bottom:3px solid #EDEDED;
+}
+
+
+.box2{
+width: 900px;
+border: 1px solid #000;
+margin:0 auto;
 
 }
- textarea
- {
- 	padding:10px;
-	border-radius:14px;
-	-moz-border-radius:14px;
-	-webkit-border-radius:14px;
-	outline:none;
-	box-sizing: border-box;
-	width:100%;
-	font:14px 'Arimo' sans-serif;
-	
- }
+
+#avatar2{
+
+}
+
+
+.box{
+width: 500px;
+position: relative;
+border: 1px solid #000;
+margin:0 auto;
+
+}
+
+.avatar{
+	width: inherit;
+	margin-top: 20px;
+}
+.avatar img{
+	width: 200px;
+	padding: 1px;
+	border-radius: 50%;
+}
+
+.h3{
+	text-align: center;
+}
+
+.box p{
+	padding: 5px;
+	font-style: italic;
+}
+
+.box button{
+background-color: blue;
+	margin-bottom: 10px;
+	padding: 6px;
+
+}
+
+#avatar2 p{
+
+	text-align: justify-all;
+}
+
+.box3{
+width: 250px;
+
+position: relative;
+border: 1px groove #000;
+float: left;
+margin-left: 40px;
+margin-right: 15px;
+margin-top: 20px;
+}
+
+.avatar3{
+	width: inherit;
+	margin-top: 20px;
+}
+.avatar3 img{
+	width: 200px;
+	padding: 1px;
+}
+
+
+
+.box3 p{
+	padding: 5px;
+	font-style: italic;
+}
+
+.box3 button{
+background-color: blue;
+	margin-bottom: 10px;
+	padding: 6px;
+
+}
+
+footer {
+    position: relative;
+    bottom: 0;
+    background-color: blue;
+    color: #FFF;
+    width: 100%;
+    height: 100px;    
+    text-align: center;
+    line-height: 100px;
+}
