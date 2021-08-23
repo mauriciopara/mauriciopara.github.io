@@ -10,7 +10,7 @@ main{
 
  top: 30px;
  border-style: groove;
- border-width: 1px
+ border-width: 1px;
  border-color:#adad85;
  text-align: center;
    font-family: serif; 
@@ -40,7 +40,7 @@ main{
 
     /* visual do link */
     background-color:#19334d;
-    color: ;
+
     text-decoration: none;
     border-bottom:3px solid #19334d;
 }
