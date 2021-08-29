@@ -1,10 +1,3 @@
-<script>
-
-
-document.write ("Exercício 5 --> Console <br> <br> Números primos, intervalo de 1-1000<br><br> Logo logo todos os sites HTML estarão linkados para um .JS  :)     <br><br> Desculpe pela gambiarra... ")
-
-//5
-
 function prime() {
     
     
@@ -25,4 +18,3 @@ function prime() {
     }
 }
 prime()
-</script>

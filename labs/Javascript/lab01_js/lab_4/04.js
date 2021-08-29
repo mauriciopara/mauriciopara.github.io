@@ -1,10 +1,3 @@
-<script>
-
-
-document.write ("Exercício 4 --> Console <br> <br> Primeiros 100 números na sequência Fibonacci <br><br> Logo logo todos os sites HTML estarão linkados para um .JS  :)     <br><br> Desculpe pela gambiarra... ")
-
-//4
-
 function fibonacci() {
     let next = 0;
     let previous = 0;
@@ -25,4 +18,3 @@ function fibonacci() {
 
 }
 fibonacci()
-</script>
