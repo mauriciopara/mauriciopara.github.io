@@ -61,19 +61,24 @@ forca.onclick = function(){
             if(letm.test(text.value) || letM.test(text.value) || (numeros.test(text.value) != True))
             {
                 text.style.backgroundColor="red"
+                result.innerHTML = "Senha fraca"
             }
             if(letm.test(text.value) && letM.test(text.value) && numeros.test(text.value))
             {
                 text.style.backgroundColor="orange"
+                result.innerHTML = "Senha moderada"
+
             }
             
             if(letm.test(text.value) && letM.test(text.value) && numeros.test(text.value)  && especiais.test(text.value))
             {
                 text.style.backgroundColor="green"
+                result.innerHTML = "Senha forte"
             }
             if(text.value == '')
             {
                 text.style.backgroundColor="blue"
+                result.innerHTML = "Não existe senha no campo acima"
             }
              
 
