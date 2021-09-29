@@ -41,6 +41,33 @@ vog.onclick = function(){
 
 // separa em tabela
 
+///////////////////////////////////// Troca
+
+
+const middle = document.getElementById("bigone")
+const wish = document.getElementById("one")
+const final = document.getElementById("two")
+const changes = document.getElementById("resultTwo")
+const swap = document.getElementById("swap")
+
+swap.onclick = function(){
+    
+    let alfa = middle.value
+
+    alfa = alfa.split(' ')
+
+    for( let i = 0; i < alfa.length; i++){
+        if (alfa[i] == wish.value){
+            alfa[i] = final.value
+        }
+    }
+
+    alfa = alfa.join(' ')
+
+    changes.innerHTML = alfa
+
+}
+
 
 //Conta palavras
 
@@ -83,7 +110,32 @@ forca.onclick = function(){
              
 
 }
+///////////////////////// Codificador
 
+const code = document.getElementById("code")
+
+code.onclick = function (){
+    yale = text.value
+
+    yale = yale.split('')
+
+    for ( let i=0; i< text.value.length; i++){
+        
+        if (yale[i] == 'T' || yale[i] == 't') {if (yale[i] == 'T'){ yale[i] = 'P'}else{ yale[i] = 'p'}}
+        else if (yale[i] == 'P' || yale[i] == 'p') {if (yale[i] == 'P'){yale[i] = 'T'}else{yale[i] = 't'}}
+        else if (yale[i] == 'E' || yale[i] == 'e') {if (yale[i] == 'e'){ yale[i] = 'o'} else{ yale[i] = 'O'}}
+        else if (yale[i] == 'O' || yale[i] == 'o') {if (yale[i] == 'O'){yale[i] = 'E'}else{yale[i] = 'e'}}
+        else if (yale[i] == 'N' || yale[i] == 'n') {if (yale[i] == 'N'){yale[i] = 'L'}else{yale[i] = 'l'}}
+        else if (yale[i] == 'L' || yale[i] == 'l') {if (yale[i] == 'L'){yale[i] = 'N'}else{yale[i] = 'n'}}
+        else if (yale[i] == 'I' || yale[i] == 'i') {if (yale[i] == 'I'){yale[i] = 'A'}else{ yale[i] = 'a'}}
+        else if (yale[i] == 'A' || yale[i] == 'a') {if (yale[i] == 'A'){yale[i] = 'I'}else{yale[i] = 'i'}}
+        else if (yale[i] == 'S' || yale[i] == 's') {if (yale[i] == 'S'){yale[i] = 'R'}else{yale[i] = 'r'}}
+        else if (yale[i] == 'R' || yale[i] == 'r') {if (yale[i] == 'R'){yale[i] = 'S'}else{ yale[i] = 's'}}
+    }
+    yale = yale.join('')
+    result.innerHTML = yale
+
+}
 
 ///////////////////////// Distancia entre datas
 
@@ -130,27 +182,10 @@ ex.onclick = function(){
     mes = "0" + mes
 
     arrayDia = new Array();
-    arrayDia[0] = "Domingo";
-    arrayDia[1] = "Segunda-Feira";
-    arrayDia[2] = "Terça-Feira";
-    arrayDia[3] = "Quarta-Feira";
-    arrayDia[4] = "Quinta-Feira";
-    arrayDia[5] = "Sexta-Feira";
-    arrayDia[6] = "Sábado";
+    arrayDia[0] = "Domingo";arrayDia[1] = "Segunda-Feira";arrayDia[2] = "Terça-Feira";arrayDia[3] = "Quarta-Feira";arrayDia[4] = "Quinta-Feira";arrayDia[5] = "Sexta-Feira";arrayDia[6] = "Sábado";
 
     var arrayMes = new Array();
-    arrayMes[0] = "Janeiro";
-    arrayMes[1] = "Fevereiro";
-    arrayMes[2] = "Março";      
-    arrayMes[3] = "Abril";
-    arrayMes[4] = "Maio";
-    arrayMes[5] = "Junho";
-    arrayMes[6] = "Julho";
-    arrayMes[7] = "Agosto";
-    arrayMes[8] = "Setembro";
-    arrayMes[9] = "Outubro";
-    arrayMes[10] = "Novembro";
-    arrayMes[11] = "Dezembro";
+    arrayMes[0] = "Janeiro";arrayMes[1] = "Fevereiro";arrayMes[2] = "Março";      arrayMes[3] = "Abril";arrayMes[4] = "Maio";arrayMes[5] = "Junho";arrayMes[6] = "Julho";arrayMes[7] = "Agosto";arrayMes[8] = "Setembro";arrayMes[9] = "Outubro";arrayMes[10] = "Novembro";arrayMes[11] = "Dezembro";
     retorna.innerHTML = arrayDia[Dia+1] + ", " + (dia) + " de " + arrayMes[Mes] + " de " + ano
 
 
