@@ -58,14 +58,15 @@ forca.onclick = function(){
             const especiais = /[@#!$%&*()-+.,=]/;
             const numeros = /[1-9]/;
             
-            
+            if(letm.test(text.value) || letM.test(text.value) || (numeros.test(text.value) != True))
+            {
+                text.style.backgroundColor="red"
+            }
             if(letm.test(text.value) && letM.test(text.value) && numeros.test(text.value))
             {
                 text.style.backgroundColor="orange"
             }
-            if(letm.test(text.value) && letM.test(text.value) && numeros.test(text.value) == 0){
-                text.style.backgroundColor="red"
-            }
+            
             if(letm.test(text.value) && letM.test(text.value) && numeros.test(text.value)  && especiais.test(text.value))
             {
                 text.style.backgroundColor="green"
