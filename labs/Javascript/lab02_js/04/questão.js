@@ -1,7 +1,7 @@
 
 
 
-let cash = 15512
+let cash = 1280
 
     while( cash > 0){
         while(cash>=100){
