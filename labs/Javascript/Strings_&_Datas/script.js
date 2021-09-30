@@ -122,30 +122,7 @@ const rest = document.getElementById("chocolate")
 
 
 
-const vezes = document.getElementById("times")
 
-vezes.onclick = function() {
-    aux = text.value.split(' ');
-    let hand = []
-    let txt = []
-    for (i=0;i<aux.length;i++) {
-        hand[i] = countOcurences(middle.value, aux[i])
-        txt[i]='Para a palavra '+ aux[i]+ ' houveram '+ hand[i] + ' ocorrências' + "<br></br>"
-        result.innerHTML=txt.join("")
-    }
-
-};
-
-function countOcurences(s, word) {
-    let replace = word
-    let re = new RegExp(replace,"g");
-    
-    txt = s.replace(/(^\s*)|(\s*$)/gi,"");
-    txt = txt.replace(/[ ]{2,}/gi," ");
-    txt = txt.replace(/\n /,"\n"); 
-    
-            return txt.match(re, '').length
-         }
 
 ///////////////////////////////////// Troca
 
