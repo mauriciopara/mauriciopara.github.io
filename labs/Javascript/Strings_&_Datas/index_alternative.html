@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Separar e contar</title>
+    <meta charset="utf-8">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script type="text/javascript">
+        function repeticoes(ps, palavra){
+            return ps.filter((v) => (v === palavra)).length;
+        }
+        $(function(){
+            $("#texto").click(function(){
+                let valorPalavra = $("#palavra").val();
+                const regex = /[0-9]/;
+                if(regex.test(valorPalavra) || valorPalavra == '')
+                {
+                    alert("Digite um valor válido.");
+                }
+                else{
+
+
+                    var ps = valorPalavra.split(" ").map(function(palavra){ 
+                        return palavra.toLocaleLowerCase().replace(/[.,]/g, ''); 
+                    });
+                    console.log(ps);
+
+                    var i = 0;
+                    var array_oco = [];
+                    var jaForam = [];
+                    var x = 0;
+                    for(palavra of ps){
+                        if(jaForam.indexOf(palavra) == -1){
+                            let oco = (repeticoes(ps, palavra));
+                            jaForam.push(palavra);
+                            array_oco[x] = oco;
+                        }
+                        else{
+                            x--;
+                        }
+                        i++;
+                        x++;
+                        }
+
+                    for(i=0;i<jaForam.length;i++)
+                    {
+                        let objeto_tr = $("<tr>");
+                        $("#acervo").append(objeto_tr);
+                                
+
+                        let objeto_td = $("<td>"); 
+                        let objeto_td2 = $("<td>");
+                        objeto_td.text(jaForam[i]);
+                        objeto_td2.text(array_oco[i]);
+                        console.log(jaForam);
+
+                        objeto_tr.append(objeto_td);
+                        objeto_tr.append(objeto_td2);
+
+                        
+                    }
+                    
+                }
+
+
+            })
+        })
+</script>
+</head>
+<body>
+<section>
+<h2>Esta opção pode ler um texto e separar todas as palavras em um array, indicando para cada uma 
+    delas o número de vezes que aparece no texto. O array imprime em uma tabela a palavra e o
+    número de ocorrências</h2> 
+<input id="palavra">  <button id="texto">Separar e contar</button>
+<p id="resultado">
+</section>
+
+<section id="table" style=" width: 100%;">
+    <section id="padOne" style="padding-left: 500px;">
+    <h1 id="padTwo" style="padding-left: 10px;">Tabela</h1>
+    <table width="50%" border="10" id="acervo">
+        <tr>
+            <th class="teste" id="th1">Nome</th>
+            <th class="teste"id="th2">Ocorrencias</th>
+        </tr>
+    </table>
+</section>
+</section>
+
+<a href="">Retornar</a>
+ 
+</body>
+</html>

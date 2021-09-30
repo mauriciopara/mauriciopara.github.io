@@ -1,0 +1,98 @@
+<html>
+<head>
+	<meta charset="UTF-8">
+    <title>Exercício 04</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script type="text/javascript">
+
+        function repeticoesP(palavras, palavra){
+        return palavras.filter((v) => (v === palavra)).length;
+        
+    }
+    $(function(){
+        $("#texto").click(function(){
+            let texto = $("#palavra").val();
+            const regex = /[0-9]/;
+            if(regex.test(texto) || texto == '')
+            {
+                alert("Digite um valor válido, por favor.");
+            }
+
+            else{
+                var palavras = texto.split(" ").map(function(palavra){ 
+
+                    return palavra.toLocaleLowerCase().replace(/[.,@#'"]/g, ''); 
+                    
+                });
+                console.log(palavras);
+
+
+                var array_ocorrencias = new Array;
+                var i = 0;
+                var x = 0;
+                var jaForam = [];
+                for(palavra of palavras){ 
+
+                    if(jaForam.indexOf(palavra) == -1){  
+                        let oco = repeticoesP(palavras, palavra);
+                        jaForam.push(palavra); 
+                       
+                        array_ocorrencias[x] = oco;
+                        
+                    }
+                    else{
+                        x--;
+                    }
+                    i++;
+                    x++;
+                }
+
+                var palavra_mais_ocorrido;
+                var cont = 0;
+                var empate_array = [];
+         
+                for(i=0;i<jaForam.length;i++)
+                {
+                    var maior = Math.max.apply(null,array_ocorrencias); 
+                    if(array_ocorrencias[i]==maior)
+                    {   
+                        cont++;
+                        palavra_mais_ocorrido = jaForam[i];
+                        empate_array[i] = jaForam[i];
+                    }
+
+                }
+                console.log(cont);
+                console.log(jaForam);
+                console.log(array_ocorrencias);
+                
+                if(cont>1)
+                {
+                    $("#resultado").text("Existem " + empate_array.length + " palavras que aparecem " + array_ocorrencias[0] + " vez. São elas: " + empate_array);
+                }
+                else
+                {
+                     $("#resultado").text("A palavra que aparece mais vezes é: '" + palavra_mais_ocorrido + "'. A quantidade de vezes que ela aparece é: " + maior);
+                }
+            
+        }
+
+        })
+    })
+ 
+    </script>
+</head>
+<body>
+    <section>
+    <h2>Este programa lê um texto e indica a palavra de maior ocorrência e quantas vezes ela apareceu no texto. </h2>
+   <br>
+   <textarea id="palavra"></textarea>
+    <button id="texto">Maior ocorrência</button> <br><br>
+    <p id="resultado" style="font-size:20px;">
+        </p>
+    </section>
+
+    <a href="">Retornar</a>
+
+</body>
+</html>

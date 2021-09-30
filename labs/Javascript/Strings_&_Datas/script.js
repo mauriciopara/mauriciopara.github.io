@@ -43,6 +43,85 @@ vog.onclick = function(){
 
 //////////////////////////////////////Maior ocorrencia 
 
+/*const valor = document.getElementById("text_more")
+const but  = document.getElementById("separe")
+const TR = document.getElementById("tr")
+const table = document.getElementById("acervo")
+const rest = document.getElementById("chocolate")
+
+
+    but.onclick = function(){
+        rest.innerHTML = "ola"
+        let valorPalavra = valor.value;
+        const regex = /[0-9]/;
+        if(regex.test(valorPalavra) || valorPalavra == '')
+        {
+            alert("Digite um valor válido.");
+        }
+        else{
+
+
+            var ps = valorPalavra.split(" ").map(function(palavra){ 
+                return palavra.toLocaleLowerCase().replace(/[.,]/g, ''); 
+            });
+            console.log(ps);
+
+            var i = 0;
+            var array_oco = [];
+            var jaForam = [];
+            var x = 0;
+            for(palavra of ps){
+                if(jaForam.indexOf(palavra) == -1){
+                    let oco = (repeticoes(ps, palavra));
+                    jaForam.push(palavra);
+                    array_oco[x] = oco;
+                }
+                else{
+                    x--;
+                }
+                i++;
+                x++;
+                }
+
+            for(i=0;i<jaForam.length;i++)
+            {
+                let objeto_tr = TR;
+                table.append(objeto_tr);
+                        
+
+                let objeto_td =document.getElementById("td1"); 
+                let objeto_td2 =document.getElementById("td2"); 
+                objeto_td.text(jaForam[i]);
+                objeto_td2.text(array_oco[i]);
+                console.log(jaForam);
+
+                objeto_tr.append(objeto_td);
+                objeto_tr.append(objeto_td2);
+
+                
+            }
+            
+        }
+
+
+    };
+
+    function repeticoes(ps, palavra){
+        return ps.filter((v) => (v === palavra)).length;
+    }
+
+*/
+
+
+
+
+///////////////////////////// MAior ocorrencia
+
+
+////////////////////////////////////////////////
+
+
+
 const vezes = document.getElementById("times")
 
 vezes.onclick = function() {
