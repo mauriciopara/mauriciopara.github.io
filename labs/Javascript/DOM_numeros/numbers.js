@@ -81,6 +81,8 @@ h.onclick = function(){
 
     let pitagoras = c1**2 + c2**2;
 
+    pitagoras = Math.sqrt(pitagoras);
+
     result.innerHTML = "Considerando os catetos ("+c1+","+c2+") a hipotenusa é "+pitagoras;
 }
 

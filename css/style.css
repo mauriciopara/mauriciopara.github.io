@@ -154,6 +154,10 @@ margin-bottom: 50px;
 	font-style: italic;
 }
 
+.box3 h3{
+    font-size: 30px;
+}
+
 .box3 button{
 background-color:  #19334d;
 	margin-bottom: 10px;
