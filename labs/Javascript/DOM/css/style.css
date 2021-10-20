@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+*{
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif ;
+}
+
+body, img{
+    background: linear-gradient(
+  90deg,
+  rgb(18, 15, 80) 0%,
+  rgba(9, 9, 121, 1) 35%,
+  rgb(25, 70, 79) 100%
+);
+}
+
+.receita {
+    padding: 5px;
+    position: relative;
+    width: 1050px; 
+    margin-left: auto;
+    margin-right: auto; 
+    background-color:#fff;
+    text-align:left;
+    border: 10;
+    
+    text-align: center;
+
+}
+
+.listas{
+    background:#fff;
+}
+
+ul, ol{
+    padding: 50px;
+    font-family: 'Poppins', sans-serif ;
+    box-sizing: border-box;
+    background: #fff;
+    text-align: left;
+}
+
+img{
+    padding: 10px;
+    width: 25%;
+    
+    border-radius: 10px;
+    
+}
+
+h1{
+    background: #fff;
+    text-align: center;
+}
+h2, h3, h4{
+    background:#fff;   
+}
+
+li{
+    background: #fff;
+}
+
+p{
+    background: #fff;
+}
