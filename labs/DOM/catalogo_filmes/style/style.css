@@ -1,0 +1,140 @@
+/* .container{
+     display: flex; 
+} */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alumni+Sans:wght@100&family=Bebas+Neue&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif ;
+    color: #fff;
+}
+
+body{
+    background-color: #11101d;
+}
+
+.firstman{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 1.2em;
+    text-align: center;
+}
+
+.item{
+    background-color:#1d1b31;
+    padding: 10px;
+    height: 590px;
+    width: 380px;
+    border-radius: 2%;
+    text-align: center;
+}
+
+.firstImage{
+    
+    padding-top: 10px;
+    width: 92%;
+    height: 30%;
+     
+}
+
+.title{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 1em;
+    text-align: center;
+}
+.Indicacoes{
+    width: 22px;
+    height: 20px; 
+}
+
+.red, .yellow, .green{
+    text-align: center;
+    border-radius: 15%; 
+}
+.red{
+    background-color: rgb(255, 8, 8);
+}
+.green{ 
+    background-color: rgb(16, 228, 16);
+}
+.yellow{
+    background-color: rgb(216, 216, 27);  
+}
+
+
+
+
+ul{
+    list-style: none;
+    font-size: 14px;
+}
+
+.listas{
+    display: flex;
+    font-family: 'Alumni', sans-serif ;
+    justify-content: center;
+    /* align-items: center; */
+    gap: 1em;
+    text-align: center;
+
+    
+}
+.listas ul{
+    font-size: 11px;
+}
+
+h4{
+    text-align: justify;
+    font-size: smaller;
+    padding-top: 20px;
+}
+
+.h4Listas{
+    text-align: center;
+}
+
+h5{
+    text-align: left;
+    padding-top: 10px;
+}
+
+p{
+    text-align: left;
+    font-size: small;
+}
+
+hr{
+    padding: 0.32px
+}
+
+.stars{
+    padding-bottom: 12px;
+}
+
+.stars p{
+    text-align: left;
+    font-family: 'Bebas', sans-serif ;
+    
+}
+
+.stars img{
+    text-align: center;
+    height: 19px;
+}
