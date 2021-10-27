@@ -91,7 +91,7 @@ let url = `https://rafaelescalfoni.github.io/desenv_web/filmes.json`;
 
                 for(let j = 1; j <= aux; j++){
                 let img = document.createElement("img");
-                img.src= "/imagens/star.svg";
+                img.src= "https://mauriciopara.github.io/labs/DOM/catalogo_filmes/imagens/star.svg";
                 total.appendChild(img)
                 }
                 
