@@ -49,7 +49,7 @@ let url = `https://rafaelescalfoni.github.io/desenv_web/filmes.json`;
                 Text  = document.createTextNode(ind)
                 number.appendChild(Text)
                 divind.appendChild(number)
-                number.classList.add("yellow");
+                number.classList.add("green");
             }
              else if(ind >= 14 && ind < 18){
                 Text  = document.createTextNode(ind)
