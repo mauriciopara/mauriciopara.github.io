@@ -1,0 +1,255 @@
+body {
+    margin:0;
+    background-color: rgb(26, 28, 30);
+    font-family: "Ubuntu","Helvetica Neue",Helvetica,Arial,sans-serif;
+    color: #8a8c8e;
+}
+
+main {
+    background-color: rgb(26, 28, 30);
+    width:1250px;
+    margin:0 auto;
+}
+
+/* header */
+header {
+    
+}
+header:after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+
+header div {
+    float:right;
+    color:#fff;
+    padding: 10px 15px;
+}
+
+header ul {
+    float:left;
+    list-style-type: none;
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+}
+
+header li{
+    float:left;
+    width: 120px;
+    height: 42px;
+    padding: 10px 15px;
+    color: #d1f1f1;
+    text-align: center;
+    text-transform: uppercase;
+    box-sizing: border-box;
+}
+
+header li:hover {
+    background-color: #fff;
+    color: #8a8c8e;
+    transition: background-color .2s ease, color .2s ease;
+}
+
+header li:first-child, .active {
+    color: #8a8c8e;
+    background-color:#fff;
+}
+.active {
+    border-left: 1px #838587 solid;
+}
+
+header a {
+    color: #8a8c8e;
+    text-decoration: none;
+    font-family: 'PT Sans', sans-serif;
+}
+
+header a:hover {
+    color: #8a8c8e;
+    transition: color .2s ease;
+}
+
+/* main content */
+.content {
+    position:relative;
+}
+
+.img-main {
+    background: url(../img/main.jpg);
+    width:1250px;
+    height: 700px;
+    background-position: center;
+    background-size: cover;
+
+}
+
+.content h1 {
+    color: #fff;
+    text-align: center;
+    font-size:1.9em;
+    font-weight: 300;
+    letter-spacing:0.19em;
+    text-transform: uppercase;
+}
+
+.bottom-effect {
+    position:absolute;
+    bottom:0;
+    right:0;
+    width: 100%;
+    height: 80px;
+    background:linear-gradient(rgba(0,0,0,.1), rgb(26, 28, 30));
+}
+
+.item {
+    background-color:rgba(231, 233, 235, .7);
+    border:1px solid #000;
+    padding:15px 10px;
+    color: #000;
+    position: relative;
+}
+
+.item:after{
+    content: "";
+    display: block;
+    clear: both;
+}
+.item figure {
+    position: relative;
+    float:left;
+    width:40%;
+    margin:0;
+}
+.item figcaption{
+    text-align: center;
+    position:absolute;
+    padding:5px;
+    bottom:0;
+    right:0;
+    width:100%;
+    height: 26px;
+    color: rgb(231, 233, 235);
+    background-color: rgba(0,0,0,.7);
+    box-sizing: border-box;
+}
+
+.item img {
+    width:100%;
+    height:100%;
+}
+.item-description {
+    float:right;
+    width: 50%;
+    margin-left: 10px;
+    padding: 0 10px;
+    font-size:0.8em;
+    line-height: 1.7em;
+}
+.item-description span {
+    position:absolute;
+    bottom:-20px;
+    right:-20px;
+    box-sizing: border-box;
+    padding-top: 20px;
+    background-color:rgb(125,6,2);
+    width:60px;
+    height:60px;
+    text-align:center;
+    vertical-align: middle;
+    border-radius:50%;
+    color:rgb(231, 233, 235);
+}   
+.cash-register  {
+    background-color:#b1b2b3b3;
+    border-radius: 10px;
+    color: #000;
+    height: 500px;
+}
+
+.cash-register h3 {
+    text-align: right;
+    font-size: 2em;
+    font-family: 'Courier New', Courier, monospace;
+    border-bottom: gainsboro 1px solid;
+}
+
+.cash-register li {
+    border-bottom:dotted 1px #000;
+}
+
+.cash-register .selected-items span{
+    float:right;
+}
+
+.container {
+    width:100%;
+}
+
+.row:after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.col-md-4,.col-md-6, .col-md-8, .col-md-12 {
+    float:left;
+    padding: 10px 25px;
+    box-sizing:border-box;
+}
+.col-md-4 {
+    width:33.3%;
+}
+
+.col-md-6 {
+    width:50%;
+}
+.col-md-8 {
+    width:66.6%;
+}
+
+.col-md-12 {
+    width:100%;
+}
+footer h1 {
+    color: #fff;
+    font-size:1.9em;
+    font-weight: 300;
+    letter-spacing:0.19em;
+    margin-top:0;
+    margin-bottom: .6em;
+    text-transform: uppercase;
+}
+
+footer h3 {
+    font-size: 0.9em;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+
+footer h4 {
+    font-weight: 500;
+    font-size: 0.9em;
+    font-style: italic;
+    margin-bottom: 5px;
+    text-transform: uppercase;
+}
+
+footer address { 
+    font-size: 0.8em;
+    line-height: 1.7em;
+}
+footer .logo {
+    width: 190px;
+    text-transform: uppercase;
+    font-size: 0.9em;
+    line-height:2em;
+}
+
+footer p {
+    font-size: 0.8em;
+    line-height:1.7em;
+    margin-top: 3px;
+}
