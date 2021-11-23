@@ -4,6 +4,7 @@
     background-color: #333;
     font-family: 'Poppins', sans-serif ;
     color: #fff;
+    overflow-x: hidden;
 }
 
 .container {
@@ -41,3 +42,4 @@
     width: 100%;
     
 }
+
