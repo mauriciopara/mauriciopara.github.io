@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade 01</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="./script.js"></script>
+</head>
+<body>
+    <p>
+        Seus dados devem ser enviados numa requisição HTTP com método POST para a URL http://httpbin.org/post
+    </p>
+    <fieldset>
+        <legend>Cadastro de Livros</legend>
+        <label>Título</label>
+        <input type="text" id="titulo" placeholder="Digite o título do livro"/> <br />
+        <label>Descrição</label>
+        <textarea id="descricao" placeholder="Digite uma descricao para o livro"></textarea> <br />
+        <label>Autores</label>
+        <input type="text" id="autores" placeholder="Digite os autores da obra"/> <br />
+        <label>Estilo</label>
+        <input type="text" id="estilo" placeholder="Digite o estilo do livro"/>
+        <br>
+        <button id="adicionar">Adicionar</button>
+        <button id="excluir">Limpar</button>
+    </fieldset>
+    
+    <table id="acervo" border="1px">
+        <tr>
+            <th>Título</th>
+            <th>Autores</th>
+            <th>Estilo</th>
+            <th>Descrição</th>
+            <th></th>
+        </tr>
+    </table>
+    <button id="apagarAcervo">Apagar</button>
+    
+    <button id="enviar">Enviar</button>
+    
+</div>
+</body>
+</html>
