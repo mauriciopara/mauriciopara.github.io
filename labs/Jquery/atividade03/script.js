@@ -20,13 +20,7 @@ $(function(){
 
             sec.append(`<img src ="${receita.foto}">`);
             
-            const ol = $('<ol>');
-            receita.preparo.forEach((preparo) =>{
-                        const li = $("<li>");
-                        li.text(preparo);
-                        ol.append(li);
-                    })
-            sec.append(ol);
+            sec.append(`<h3> Ingredientes </h3>`);
 
             const ul = $('<ul>');
             receita.ingredientes.forEach((ingrediente) =>{
@@ -35,6 +29,17 @@ $(function(){
                         ul.append(li);
                     })
             sec.append(ul);
+
+            sec.append(`<h3> Preparo</h3>`);
+            const ol = $('<ol>');
+            receita.preparo.forEach((preparo) =>{
+                        const li = $("<li>");
+                        li.text(preparo);
+                        ol.append(li);
+                    })
+            sec.append(ol);
+
+            
 
 
        
