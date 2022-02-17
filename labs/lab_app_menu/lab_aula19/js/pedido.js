@@ -11,7 +11,6 @@ class Pedido {
     addProduto(item) {
         this.listaProdutos.push(item);
         this.total += item.price;
-
         this.load();
     }
 

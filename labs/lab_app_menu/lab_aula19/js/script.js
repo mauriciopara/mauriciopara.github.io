@@ -31,6 +31,20 @@ window.onload = () => {
 /**
  * Declaração dos eventos previstos na área principal
  */
+
+document.querySelector('header').addEventListener('click', event => {
+    if(event.target.matches("#navMenuButton")) {
+        //carregar todas as categorias
+        loadMenuCategories();
+    }
+
+    if(event.target.matches("#navPedidosButton")) {
+        //carregar todas as categorias
+        view.createCarrinho(pedido)
+
+    }
+})
+
 mainContent.addEventListener('click', (event) => {
     /* 
       programando o evento de clique no card de menu categoria
@@ -57,7 +71,7 @@ mainContent.addEventListener('click', (event) => {
     if(event.target.matches("button.pedir")){
         let selectedItem = items.getItem(event.target.id); 
         pedido.addProduto(selectedItem);
-        view.listPedido(pedido);
+        view.sucess(pedido);
     }
 
 
@@ -66,13 +80,14 @@ mainContent.addEventListener('click', (event) => {
  * 1 ATIVIDADE - Programar a funcionalidade Remover Item
  ***  a. escolha ou crie um evento para remover um item do pedido
 */
-    if(event.target.matches(".seuSeletorAqui")){
+    if(event.target.matches("button.excluir")){
         //i. identifique o item a ser removido
-
+        let selectedItem = items.getItem(event.target.id)
         //ii. chame o método de remoção no objeto pedido
-
+        pedido.removeProduto(selectedItem)
         //iii. atualize a view
-
+        view.listPedido(pedido)
+        view.removed()
     }   
     
 })
@@ -91,7 +106,6 @@ function loadMenuCategories(){
 function loadMenuItems(shortName){
     //atualizar o pedido a partir do storage
     pedido.readFromStorage();
-    console.log(pedido);
     //ir no modelo de categorias para pegar o objeto 
     //correspondente ao código da categoria
     let selectedCat = categories.list(shortName);

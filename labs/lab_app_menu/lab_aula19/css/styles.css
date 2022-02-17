@@ -22,6 +22,7 @@ body {
 .navbar-brand {
   padding-top: 25px;
 }
+
 .navbar-brand h1 { /* Restaurant name */
   font-family: 'Lora', serif;
   color: #557c3e;
@@ -33,6 +34,10 @@ body {
   margin-bottom: 0;
   line-height: .75;
 }
+.navbar a{
+  outline: none;
+}
+
 .navbar-brand a:hover, .navbar-brand a:focus {
   text-decoration: none;
 }
