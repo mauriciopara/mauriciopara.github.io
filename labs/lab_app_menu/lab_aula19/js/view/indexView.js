@@ -95,18 +95,13 @@ class IndexView {
   createDishes(category, dishList, pedido) {
     //Nova div para o pedido
     let divPedido = `<h2>Pedido</h2> <h5 id='totalPedido'>0</h5><ul id='pedidoList'></ul>`;
-    let h2MenuCategories = `<h2 class="text-center" id="menu-categories-title"> Menu ${category.name}</h2>`;
-    let limenu = `<ul id="nav-list" class="nav navbar-nav navbar-right"> <li id="navPedidosButton">
-    <a href="#" id="navPedidosButton">
-      <span id="navPedidosButton" class="glyphicon glyphicon-shopping-cart"></span><br class="hidden-xs">Pedidos</a>
-  </li></ul>`
+    let h2MenuCategories = `<h2 class="text-center" id="menu-categories-title">Menu ${category.name}</h2>`;
     let divInstructions = `<div class="text-center">${category.special_instructions}</div>`;
     let sectionCat = `<section class="row"></section>`;
     //carregando na página
     this.domObj.innerHTML = "";
     this.domObj.innerHTML += divPedido; //appendChild(divPedido);
     this.domObj.innerHTML += h2MenuCategories;
-    this.domObj.innerHTML += limenu;
     this.domObj.innerHTML += divInstructions;
     this.domObj.innerHTML += sectionCat;
 
@@ -178,10 +173,6 @@ class IndexView {
    * Pega a relação de pratos pedidos e exibe na tela
    * @param {} pedido
    */
-
-  
-   
-
   listPedido(pedido) {
     this.showTotal(pedido)
 
@@ -237,17 +228,5 @@ class IndexView {
 
     this.listPedido(pedido);
   }
-
-  
-
-  // document.querySelector('li').addEventListener('click', event => {
-    
-
-  //   if(event.target.matches("#navPedidosButton")) {
-  //       //carregar todas as categorias
-  //       view.createCarrinho(pedido)
-
-  //   }
-// })
 }
 export default IndexView;
