@@ -183,7 +183,7 @@ class IndexView {
     let knownOrders = [];
     console.log(knownOrders)
     listaPedido.forEach(dish => {
-        let isHere = knownOrders.indexOf(dish)
+      let isHere = knownOrders.map(function(e) { return e.code }).indexOf(dish.code)
         if(isHere == -1){
             dish.quantity = 1;
             knownOrders.push(dish)
