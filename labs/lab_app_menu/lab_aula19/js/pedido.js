@@ -16,10 +16,7 @@ class Pedido {
 
     removeProduto(item) {
         let index = this.listaProdutos.map(function(e) { return e.code }).indexOf(item.code);
-<<<<<<< HEAD
-=======
-        console.log(index)
->>>>>>> 41272182bd91a746b4a1edebe5bece97dc25c0b5
+
         this.listaProdutos.splice(index,1);
         this.total -= item.price;
 

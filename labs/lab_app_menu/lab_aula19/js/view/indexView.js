@@ -184,12 +184,11 @@ class IndexView {
     this.knownOrders = [];
     console.log(this.knownOrders)
     listaPedido.forEach(dish => {
-<<<<<<< HEAD
+
         console.log(dish)
         let isHere = this.knownOrders.map(function(e) { return e.code; }).indexOf(dish.code)
-=======
-      let isHere = knownOrders.map(function(e) { return e.code }).indexOf(dish.code)
->>>>>>> 41272182bd91a746b4a1edebe5bece97dc25c0b5
+
+     
         if(isHere == -1){
             dish.quantity = 1;
             this.knownOrders.push(dish)
