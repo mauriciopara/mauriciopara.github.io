@@ -6,6 +6,7 @@ body{
 
 img{
     max-width: 100%;
+    
 }
 .container{
     margin-right: auto;    
@@ -217,6 +218,7 @@ img{
     margin-top: 2.5em;
 }
 
+
 .people-cards__card a{
     text-decoration: none;
 }
@@ -232,6 +234,7 @@ img{
 
 .people-cards__image{
     width: 100%;
+    height: 38%;
 }
 
 .people-cards__avatar{
